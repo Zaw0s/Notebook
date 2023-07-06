@@ -17,6 +17,7 @@ ll binpow( ll a, ll b){
             ans = ( ans * mul )%MOD;
         }
         mul = ( mul * mul )%MOD;
+        b/=2;
     }
     return ans;
 }
