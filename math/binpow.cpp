@@ -8,7 +8,7 @@ using ll=long long;
 using ld=long double;
 using vi=vector<int>;
 template<class T> using oset =tree<T, null_type, less<T>, rb_tree_tag,tree_order_statistics_node_update> ;
-
+const ll MOD = 1e9+7;
 ll binpow( ll a, ll b){
     ll ans = 1;
     ll mul = a;
