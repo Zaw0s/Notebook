@@ -28,10 +28,10 @@ struct DSU{
         b = find(b);
 
         if(a != b){
-            if(sz[a] < sz[b]) swap(a , b);
+            if(sz[b] < sz[a]) swap(a , b);
 
             parent[a] = b;
-            sz[a] += sz[b];
+            sz[b] += sz[a];
         }
     }
 
