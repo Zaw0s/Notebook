@@ -53,7 +53,7 @@ int main(){
         if(dfs_num[i] == UNVISITED){
             dfsRoot = i;
             rootChildren = 0;
-            articulationPointAndBridge(u);
+            articulationPointAndBridge(i);
             articulation_vertex[dfsRoot] = (rootChildren > 1); // Caso especial de la raíz
         }
     }
