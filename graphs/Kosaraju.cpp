@@ -8,6 +8,7 @@ vector<int> order;
 int ans = 0;
 
 void Kosaraju(int x,int step){
+	vis[x] = 1;
     if(step == 1){
 
         for(auto &u:AL[x]){
