@@ -32,7 +32,7 @@ int LCA(int x,int y){
 
     if(depth[x] < depth[y]) swap(x,y);
 
-    x = jump(x, depth[y]-depth[x]);
+    x = jump(x, depth[x]-depth[y]);
 
     if(x == y) return x;
 
