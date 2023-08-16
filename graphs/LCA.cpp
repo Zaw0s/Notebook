@@ -21,7 +21,7 @@ void fill(){
 
 int jump(int x,int d){
     for(int i = 19; i >= 0; i--){
-        if( (d &(1<<i)) == 1){
+        if( (d &(1<<i)) > 0 ){
             x = up[x][i];
         }
     }
